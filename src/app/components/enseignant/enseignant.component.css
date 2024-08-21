@@ -1,0 +1,8 @@
+.tache-termine{
+    color: blue;
+    font-weight: 200px;
+}
+.tache-non-termine{
+    color:black;
+    font-weight: bold;
+}

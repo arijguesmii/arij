@@ -1,0 +1,15 @@
+<div [ngSwitch]="msg">
+    <div *ngSwitchCase="'bonjour'"><h4>bonjour</h4></div>
+    <div *ngSwitchCase="'bonsoir'"><h4>bonsoir</h4></div>
+</div>
+<div *ngFor="let i of tab44">  
+<span [ngSwitch]="i.age">
+    <i *ngSwitchCase="'25'" style="color: brown;">adult</i>
+    <i *ngSwitchCase="'10'"  style="color: green;">mineur</i>
+    <i *ngSwitchCase="'arij'" style="color: aqua;">bonsoir arij</i>
+</span>
+</div>
+<div>
+    <p [ngStyle]="{'font-size':islarge ? '104px':'10px', 'color':getcolor()}" >hello world</p>
+</div>
+<div [ngClass]="{'tache-termine':tache,'tache-non-termine': !tache}"> arij</div>
